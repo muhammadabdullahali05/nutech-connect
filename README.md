@@ -1,23 +1,118 @@
-NPM<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
-
 # NUTECH Connect
 
-This is a web app built with Vite and React.
+A modern student community and campus engagement platform built with React, Vite, Tailwind CSS, and TypeScript.
 
-## Run Locally
+NUTECH Connect brings together student communication, academic resources, event updates, internship opportunities, mentorship, AI-powered help, and campus marketplace features in one smart portal.
 
-1. Install dependencies with `npm install`.
-2. Start the dev server with `npm run dev`.
-3. Open the local URL printed by Vite.
+## Features
 
-## Build
+- Campus social feed for announcements and student discussions
+- Event calendar with RSVP support
+- Internship and job opportunities board
+- Mentor matching and student support requests
+- Marketplace for buying and selling items
+- Lost and found section
+- Project sharing and collaboration space
+- AI assistant with offline fallback support
+- Student ID scanning and profile extraction support
+- Responsive dashboard for university students
 
-Run `npm run build` to generate a production build in `dist/`.
+## Tech Stack
+
+- React 18
+- TypeScript
+- Vite
+- Tailwind CSS
+- Lucide React icons
+- Tesseract.js for OCR
+- Canvas Confetti for UI interactions
+
+## Project Structure
+
+```bash
+nutech-connect/
+├── src/
+│   ├── main.tsx
+│   └── index.css
+├── index.html
+├── package.json
+├── vite.config.ts
+├── tailwind.config.js
+├── postcss.config.js
+├── tsconfig.json
+├── .env.example
+├── README.md
+└── metadata.json
+```
+
+## Getting Started
+
+### 1. Install dependencies
+
+```bash
+npm install
+```
+
+### 2. Run the app locally
+
+```bash
+npm run dev
+```
+
+The app will start on:
+
+```bash
+http://localhost:3000
+```
+
+### 3. Build for production
+
+```bash
+npm run build
+```
+
+This will generate a production build in the `dist` folder.
+
+### 4. Preview production build
+
+```bash
+npm run preview
+```
+
+## Environment Variables
+
+An example environment file is included as `.env.example`.
+
+If you want to enable live AI features, add your API key in a `.env` file:
+
+```bash
+VITE_GEMINI_API_KEY=your_api_key_here
+```
+
+If the key is missing, the app will continue to work in offline mode.
+
+## Deployment
+
+This project is a static frontend app and can be deployed to any Vite-compatible hosting platform, including:
+
+- Vercel
+- Netlify
+- GitHub Pages
+- Firebase Hosting
+
+Because the app uses relative paths in the Vite configuration, it is suitable for static hosting.
 
 ## Notes
 
-The app works fully offline with the built-in Gemma 4 simulator.
+- The app is designed to work offline in its default mode.
+- AI features are optional and can be enabled with environment variables.
+- The interface is optimized for student engagement and campus workflow management.
 
-If you want live AI on Vercel, add `VITE_GEMINI_API_KEY` in your Vercel project environment variables and redeploy. The app will still fall back to offline mode if the key is missing.
+## License
+
+This project is open for educational and personal use. Please check with the repository owner before using it for commercial purposes.
+
+## Author
+
+NUTECH Connect
+
